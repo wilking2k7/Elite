@@ -39,7 +39,7 @@ echo "3. CentOs/5,6,7"
 echo ""
 echo "4. Início"
 echo ""
-echo "0. Sair de la Instalción"
+echo "0. Salir de la Instalción"
 
 echo ""
 
@@ -188,7 +188,7 @@ echo "3. CentOs 5"
 echo ""
 echo "4. Voltar Anteriormente"
 echo""
-echo "0. Sair do Script"
+echo "0. Salir do Script"
 
 
 echo -n "Que Opción Desea? "
@@ -422,13 +422,13 @@ echo "$(tput bold) ESCOJA UNA OPCIÓN: $(tput sgr0)"
 
 echo ""
 
-echo "$(tput bold) PARA LA DISTRIBUCION CON SQUID: $(tput sgr0)"
+echo "$(tput bold) SI TIENES /etc/squid: $(tput sgr0)"
 echo "1. Adicionar Usuario al Squid"
 
 echo "2. Remover Usuário do Squid"
 echo ""
 echo ""
-echo "$(tput bold) PARA LA DISTRIBUCION CON SQUID3: $(tput sgr0)"
+echo "$(tput bold) SI TIENES /etc/squid3: $(tput sgr0)"
 echo "3. Adicionar Usuario al Squid3"
 
 echo "4. Remover Usuário do Squid3"
@@ -436,7 +436,7 @@ echo ""
 echo "5. Início"
 
 echo ""
-echo "0. Sair del Script"
+echo "0. Salir del Script"
 
 echo -n "Que Opción Desea? "
 

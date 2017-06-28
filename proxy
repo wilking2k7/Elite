@@ -14,7 +14,7 @@ echo "1. Instalar Squid com Autenticación"
 
 echo "2. Administracion de  Squid/Squid3 con Autenticación"
 echo ""
-echo "0. Salir del Instalción"
+echo "0. Salir del Instalación"
 
 echo ""
 
@@ -73,7 +73,7 @@ echo ""
 echo "Cuál es el nombre de HOST para el Squid ?"
 read nome
 
-echo "#NOME SQUID " >> /root/tmp/ip.conf
+echo "#NOMBRE DE HOST " >> /root/tmp/ip.conf
 echo "visible_hostname $nome" >> /root/tmp/ip.conf
 
 wget -O /root/tmp/auth raw.githubusercontent.com/wilking2k7/Elite/master/authdu 1>/dev/null 2>/dev/null 
@@ -221,7 +221,7 @@ echo ""
 echo "Qual o nome para o Squid ?"
 read nome
 
-echo "#NOME SQUID " >> /root/tmp/ip.conf
+echo "#NOMBRE DE HOST " >> /root/tmp/ip.conf
 echo "visible_hostname $nome" >> /root/tmp/ip.conf
 
 wget -O /root/tmp/auth raw.githubusercontent.com/wilking2k7/Elite/master/auth 1>/dev/null 2>/dev/null 

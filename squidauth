@@ -3,21 +3,21 @@ clear
 main()
 {
 
-tput setaf 2 ; tput bold ; echo "SQUID: COM AUTENTICAÇÃO - Script By @MajinBoo" ; tput sgr0
+tput setaf 2 ; tput bold ; echo "SQUID: CON AUTENTICACIÓN - Script By @Wilking2k7" ; tput sgr0
 echo ""
-echo "$(tput bold) ESCOLHA UMA OPÇÃO: $(tput sgr0)"
-
-echo ""
-
-echo "1. Instalar Squid com Autenticação"
-
-echo "2. Gerenciamento do Squid/Squid3 Com Autenticação"
-echo ""
-echo "0. Sair do Script"
+echo "$(tput bold) ELIJA SU OPCION: $(tput sgr0)"
 
 echo ""
 
-echo -n "Qual a opção desejada? "
+echo "1. Instalar Squid com Autenticación"
+
+echo "2. Administracion de  Squid/Squid3 con Autenticación"
+echo ""
+echo "0. Sair del Instalción"
+
+echo ""
+
+echo -n "Cual es al Opción Dejada? "
 
 read opcao
 
@@ -27,7 +27,7 @@ case $opcao in
 clear
 principal()
 {
-echo "$(tput bold) ESCOLHA SUA DISTRIBUIÇÃO: $(tput sgr0)"
+echo "$(tput bold) ELIJA SU DISTRIBUCIÓN DE LINUX: $(tput sgr0)"
 
 echo ""
 
@@ -39,11 +39,11 @@ echo "3. CentOs/5,6,7"
 echo ""
 echo "4. Início"
 echo ""
-echo "0. Sair do Script"
+echo "0. Sair de la Instalción"
 
 echo ""
 
-echo -n "Qual a opção desejada? "
+echo -n "Cual es la Opcion Seleccionada? "
 
 read opcao
 
@@ -51,7 +51,7 @@ case $opcao in
 
 1)
 clear
-echo "$(tput bold) INSTALANDO E ATUALIZANDO PACOTES $(tput sgr0)" 
+echo "$(tput bold) INSTALANDO Y ATUALIZANDO PAQUETES $(tput sgr0)" 
 apt-get update -y 1>/dev/null 2>/dev/null 
 apt-get install squid3 -y 1>/dev/null 2>/dev/null 
 apt-get remove apache2 -y 1>/dev/null 2>/dev/null 
@@ -69,7 +69,7 @@ echo "$(tput bold) CONFIGURANDO SQUID $(tput sgr0)"
 
 echo "" 
  
-echo "Qual o nome para o Squid ?"
+echo "Cuál es el nombre de HOST para el Squid ?"
 read nome
 
 echo "#NOME SQUID " >> /root/tmp/ip.conf
@@ -90,8 +90,8 @@ service squid3 start 1>/dev/null 2>/dev/null
 
 echo "" 
  
-echo "Login para usar com Squid com Autenticação"
-echo "Digite o Nome do Usuário"
+echo "Login Para usar con la Autenticación de Squid"
+echo "Digite Nombre de Usuario"
 read nomesquid
 
 htpasswd -c /etc/squid3/passwd $nomesquid
@@ -99,12 +99,12 @@ htpasswd -c /etc/squid3/passwd $nomesquid
 service squid3 restart 1>/dev/null 2>/dev/null 
 service squid3 start 1>/dev/null 2>/dev/null 
 echo ""
-echo "$(tput bold) USUÁRIO E SENHA SALVO COM SUCESSO $(tput sgr0)" 
+echo "$(tput bold) USUARIO Y CONTRASEÑA SE GUARDÓ CORRECTAMENTE $(tput sgr0)" 
 
 sleep 2
 echo ""
 echo ""
-echo "$(tput bold) SQUID CONFIGURADO COM SUCESSO. Script By @MajinBoo $(tput sgr0)"
+echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @Wilking2k7 $(tput sgr0)"
 
 sleep 4
 clear
@@ -113,7 +113,7 @@ main
 
 2)
 clear
-echo "$(tput bold) INSTALANDO E ATUALIZANDO PACOTES $(tput sgr0)" 
+echo "$(tput bold) INSTALANDO Y ATUALIZANDO PAQUETES $(tput sgr0)" 
 apt-get update -y 1>/dev/null 2>/dev/null 
 apt-get install squid -y 1>/dev/null 2>/dev/null 
 apt-get remove apache2 -y 1>/dev/null 2>/dev/null 
@@ -131,7 +131,7 @@ echo "$(tput bold) CONFIGURANDO SQUID $(tput sgr0)"
 
 echo "" 
  
-echo "Qual o nome para o Squid ?"
+echo "Cuál es el nombre de HOST para el Squid  ?"
 read nome
 
 echo "#NOME SQUID " >> /root/tmp/ip.conf
@@ -161,7 +161,7 @@ htpasswd -c /etc/squid/passwd $nomesquid
 service squid restart 1>/dev/null 2>/dev/null 
 service squid start 1>/dev/null 2>/dev/null 
 echo ""
-echo "$(tput bold) USUÁRIO E SENHA SALVO COM SUCESSO $(tput sgr0)" 
+echo "$(tput bold) USUARIO Y CONTRASEÑA SE GUARDÓ CORRECTAMENTE $(tput sgr0)" 
 
 sleep 2
 echo ""
@@ -176,7 +176,7 @@ main
 #!/bin/bash
 clear
 echo ""
-echo "$(tput bold) ESCOLHA UMA OPÇÃO: $(tput sgr0)"
+echo "$(tput bold) ESCOJA UNA OPCIÓN: $(tput sgr0)"
 
 echo ""
 
@@ -248,12 +248,12 @@ htpasswd -c /etc/squid/passwd $nomesquid
 systemctl restart squid.service 1>/dev/null 2>/dev/null 
 systemctl start squid.service 1>/dev/null 2>/dev/null 
 echo ""
-echo "$(tput bold) USUÁRIO E SENHA SALVO COM SUCESSO $(tput sgr0)" 
+echo "$(tput bold) USUARIO Y CONTRASEÑA SE GUARDÓ CORRECTAMENTE $(tput sgr0)" 
 
 sleep 2
 echo ""
 echo ""
-echo "$(tput bold) SQUID CONFIGURADO COM SUCESSO. Script By @MajinBoo $(tput sgr0)"
+echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @MajinBoo $(tput sgr0)"
 sleep 4
 clear
 main
@@ -261,7 +261,7 @@ main
 
 2)
 clear
-echo "$(tput bold) INSTALANDO E ATUALIZANDO PACOTES $(tput sgr0)" 
+echo "$(tput bold) INSTALANDO Y ATUALIZANDO PAQUETES $(tput sgr0)" 
 yum update -y 1>/dev/null 2>/dev/null 
 yum install squid -y 1>/dev/null 2>/dev/null 
 yum remove httpd -y 1>/dev/null 2>/dev/null 
@@ -308,7 +308,7 @@ htpasswd -c /etc/squid/passwd $nomesquid
 service squid restart 1>/dev/null 2>/dev/null 
 service squid start 1>/dev/null 2>/dev/null 
 echo ""
-echo "$(tput bold) USUÁRIO E SENHA SALVO COM SUCESSO $(tput sgr0)" 
+echo "$(tput bold) USUARIO Y CONTRASEÑA SE GUARDÓ CORRECTAMENTE $(tput sgr0)" 
 
 sleep 2
 echo ""

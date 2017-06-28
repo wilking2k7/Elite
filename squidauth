@@ -166,7 +166,7 @@ echo "$(tput bold) USUARIO Y CONTRASEÑA SE GUARDÓ CORRECTAMENTE $(tput sgr0)"
 sleep 2
 echo ""
 echo ""
-echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @MajinBoo $(tput sgr0)"
+echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @Wilking2k7 $(tput sgr0)"
 sleep 4
 clear
 main
@@ -253,7 +253,7 @@ echo "$(tput bold) USUARIO Y CONTRASEÑA SE GUARDÓ CORRECTAMENTE $(tput sgr0)"
 sleep 2
 echo ""
 echo ""
-echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @MajinBoo $(tput sgr0)"
+echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @Wilking2k7 $(tput sgr0)"
 sleep 4
 clear
 main
@@ -314,7 +314,7 @@ sleep 2
 echo ""
 echo ""
 
-echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @MajinBoo $(tput sgr0)"
+echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @Wilking2k7 $(tput sgr0)"
 sleep 4
 clear
 main
@@ -377,7 +377,7 @@ sleep 2
 echo ""
 echo ""
 
-echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @MajinBoo $(tput sgr0)"
+echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @Wilking2k7 $(tput sgr0)"
 
 sleep 4
 clear

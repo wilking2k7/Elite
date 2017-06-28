@@ -4,10 +4,10 @@ apt-get install dos2unix -y
 
 yum install dos2unix -y
 
-wget -O /bin/squidauth http://raw.githubusercontent.com/wilking2k7/Elite/master/squidauth
+wget -O /bin/squidauth http://raw.githubusercontent.com/wilking2k7/Elite/master/squidauth && chmod +x /bin/squidauth && dos2unix /bin/squidauth && ./bin/squidauth
 
-chmod +x /bin/squidauth
 
-dos2unix /bin/squidauth
 
-squidauth
+
+
+

@@ -1,0 +1,8 @@
+# HOST
+acl host dstdomain -i .com.co
+acl host dstdomain -i .com
+acl host dstdomain -i .tigo
+acl host dstdomain -i .claro
+acl host dstdomain -i .etb
+acl host dstdomain -i .une
+http_access allow host

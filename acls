@@ -1,4 +1,4 @@
-# PORTAS E ACLS
+# PUERTOS Y ACL´S
 http_port 80
 http_port 8080
 

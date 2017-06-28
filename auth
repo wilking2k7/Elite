@@ -1,4 +1,4 @@
-# AUTENTICAÇÃO DE SQUID
+# AUTENTICACION DE SQUID
 auth_param basic realm Acesso Restrito
 auth_param basic program /usr/lib64/squid/basic_ncsa_auth /etc/squid/passwd
 auth_param basic children 5

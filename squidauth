@@ -13,11 +13,11 @@ echo "1. Instalar Squid com Autenticación"
 
 echo "2. Administracion de  Squid/Squid3 con Autenticación"
 echo ""
-echo "0. Sair del Instalción"
+echo "0. Salir del Instalción"
 
 echo ""
 
-echo -n "Cual es al Opción Dejada? "
+echo -n "Cual es al Opción Seleccionada? "
 
 read opcao
 
@@ -152,8 +152,8 @@ service squid start 1>/dev/null 2>/dev/null
 
 echo "" 
  
-echo "Login para usar com Squid com Autenticação"
-echo "Digite o Nome do Usuário"
+echo "Login Para usar con la Autenticación de Squid"
+echo "Digite el Nombre del Usuario"
 read nomesquid
 
 htpasswd -c /etc/squid/passwd $nomesquid
@@ -166,7 +166,7 @@ echo "$(tput bold) USUARIO Y CONTRASEÑA SE GUARDÓ CORRECTAMENTE $(tput sgr0)"
 sleep 2
 echo ""
 echo ""
-echo "$(tput bold) SQUID CONFIGURADO COM SUCESSO. Script By @MajinBoo $(tput sgr0)"
+echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @MajinBoo $(tput sgr0)"
 sleep 4
 clear
 main
@@ -191,7 +191,7 @@ echo""
 echo "0. Sair do Script"
 
 
-echo -n "Qual a opção desejada? "
+echo -n "Que Opción Desea? "
 
 read opcional
 
@@ -239,8 +239,8 @@ systemctl start squid.service 1>/dev/null 2>/dev/null
 
 echo "" 
  
-echo "Login para usar com Squid com Autenticação"
-echo "Digite o Nome do Usuário"
+echo "Login Para usar con la Autenticación de Squid"
+echo "Digite el Nombre del Usuario"
 read nomesquid
 
 htpasswd -c /etc/squid/passwd $nomesquid
@@ -299,8 +299,8 @@ service squid start 1>/dev/null 2>/dev/null
 
 echo "" 
  
-echo "Login para usar com Squid com Autenticação"
-echo "Digite o Nome do Usuário"
+echo "Login Para usar con la Autenticación de Squid"
+echo "Digite el Nombre del Usuario"
 read nomesquid
 
 htpasswd -c /etc/squid/passwd $nomesquid
@@ -314,7 +314,7 @@ sleep 2
 echo ""
 echo ""
 
-echo "$(tput bold) SQUID CONFIGURADO COM SUCESSO. Script By @MajinBoo $(tput sgr0)"
+echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @MajinBoo $(tput sgr0)"
 sleep 4
 clear
 main
@@ -362,8 +362,8 @@ service squid start 1>/dev/null 2>/dev/null
 
 echo "" 
  
-echo "Login para usar com Squid com Autenticação"
-echo "Digite o Nome do Usuário"
+echo "Login Para usar con la Autenticación de Squid"
+echo "Digite el Nombre del Usuario"
 read nomesquid
 
 htpasswd -c /etc/squid/passwd $nomesquid
@@ -377,7 +377,7 @@ sleep 2
 echo ""
 echo ""
 
-echo "$(tput bold) SQUID CONFIGURADO COM SUCESSO. Script By @MajinBoo $(tput sgr0)"
+echo "$(tput bold) SQUID CONFIGURADO CORRECTAMENTE. Script By @MajinBoo $(tput sgr0)"
 
 sleep 4
 clear
@@ -418,27 +418,27 @@ clear
 menu()
 {
 echo ""
-echo "$(tput bold) ESCOLHA UMA OPÇÃO: $(tput sgr0)"
+echo "$(tput bold) ESCOJA UNA OPCIÓN: $(tput sgr0)"
 
 echo ""
 
-echo "$(tput bold) PARA DISTRIBUIÇÃO COM SQUID: $(tput sgr0)"
-echo "1. Adicionar Usuário no Squid"
+echo "$(tput bold) PARA LA DISTRIBUCION CON SQUID: $(tput sgr0)"
+echo "1. Adicionar Usuario al Squid"
 
 echo "2. Remover Usuário do Squid"
 echo ""
 echo ""
-echo "$(tput bold) PARA DISTRIBUIÇÃO COM SQUID3: $(tput sgr0)"
-echo "3. Adicionar Usuário no Squid3"
+echo "$(tput bold) PARA LA DISTRIBUCION CON SQUID3: $(tput sgr0)"
+echo "3. Adicionar Usuario al Squid3"
 
 echo "4. Remover Usuário do Squid3"
 echo ""
 echo "5. Início"
 
 echo ""
-echo "0. Sair do Script"
+echo "0. Sair del Script"
 
-echo -n "Qual a opção desejada? "
+echo -n "Que Opción Desea? "
 
 read option
 
@@ -446,18 +446,18 @@ case $option in
 
 1)
 clear
-echo "$(tput bold) ADICIONE UM NOVO USUÁRIO NO SQUID: $(tput sgr0)"
+echo "$(tput bold) ESCRIBA UN NOMBRE DE USUARIO PARA SQUID: $(tput sgr0)"
 echo ""
 
 squid="/etc/squid/passwd"
-echo -n "Digite o usuário a ser adicionado: "
+echo -n "Escriba el Nombre a ser Adicionado: "
 read login
 
 echo ""
 
 htpasswd $squid $login
 
-echo "$(tput bold) USUÁRIO E SENHA ADICIONADO COM SUCESSO $(tput sgr0)" 
+echo "$(tput bold) USUARIO Y CONTRASEÑA AGREGADO CORRECTAMENTE $(tput sgr0)" 
 sleep 4
 clear
 menu
@@ -466,17 +466,17 @@ menu
 2)
 clear
 echo ""
-echo "$(tput bold) DELETE UM USUÁRIO DO SQUID: $(tput sgr0)"
+echo "$(tput bold) BORRAR USUARIO DE SQUID: $(tput sgr0)"
 echo ""
 
 squid="/etc/squid/passwd"
-echo -n "Digite o usuário a ser deletado: "
+echo -n "Digite el usuario a ser borrado: "
 read login
 
 echo "Mensagem do Sistema: "
 htpasswd -D $squid $login 
 
-echo "$(tput bold) USUÁRIO DELETADO COM SUCESSO $(tput sgr0)"
+echo "$(tput bold) USUARIO BORRADO CORRECTAMENTE $(tput sgr0)"
 sleep 4
 clear
 menu
@@ -484,18 +484,18 @@ menu
 
 3)
 clear
-echo "$(tput bold) ADICIONE UM NOVO USUÁRIO NO SQUID3: $(tput sgr0)"
+echo "$(tput bold) ESCRIBA UN NOMBRE DE USIARIO PARA SQUID: $(tput sgr0)"
 echo ""
 
 squid="/etc/squid3/passwd"
-echo -n "Digite o usuário a ser adicionado: "
+echo -n "Escriba el Nombre de Usuario a ser Adicionado: "
 read login
 
 echo ""
 
 htpasswd $squid $login
 
-echo "$(tput bold) USUÁRIO E SENHA ADICIONADO COM SUCESSO $(tput sgr0)" 
+echo "$(tput bold) USUARIO Y CONTRASEÑA AGREGADO CORRECTAMENTE $(tput sgr0)" 
 
 sleep 4
 clear
@@ -504,17 +504,17 @@ menu
 4)
 clear
 echo ""
-echo "$(tput bold) DELETE UM USUÁRIO DO SQUID3: $(tput sgr0)"
+echo "$(tput bold) BORRAR USUARIO DE SQUID: $(tput sgr0)"
 echo ""
 
 squid="/etc/squid3/passwd"
-echo -n "Digite o usuário a ser deletado: "
+echo -n "Digite el usuario a ser borrado: "
 read login
 
 echo "Mensagem do Sistema: "
 htpasswd -D $squid $login 
 
-echo "$(tput bold) USUÁRIO DELETADO COM SUCESSO $(tput sgr0)"
+echo "$(tput bold) USURIO BORRADO CORRECTAMENTE $(tput sgr0)"
 
 sleep 4
 clear
@@ -529,7 +529,7 @@ main
 
 0)
 clear
-echo " Saindo do script..."
+echo " Saliendo del script..."
 exit
 ;;
 esac
@@ -539,7 +539,7 @@ menu
 
 0)
 clear
-echo " Saindo do script..."
+echo " Saliendo del script..."
 
 exit
 ;;

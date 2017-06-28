@@ -52,7 +52,7 @@ case $opcao in
 
 1)
 clear
-echo "$(tput bold) INSTALANDO Y ATUALIZANDO PAQUETES $(tput sgr0)" 
+echo "$(tput bold) INSTALANDO Y ACTUALIZANDO PAQUETES $(tput sgr0)" 
 apt-get update -y 1>/dev/null 2>/dev/null 
 apt-get install squid3 -y 1>/dev/null 2>/dev/null 
 apt-get remove apache2 -y 1>/dev/null 2>/dev/null 
@@ -114,7 +114,7 @@ main
 
 2)
 clear
-echo "$(tput bold) INSTALANDO Y ATUALIZANDO PAQUETES $(tput sgr0)" 
+echo "$(tput bold) INSTALANDO Y ACTUALIZANDO PAQUETES $(tput sgr0)" 
 apt-get update -y 1>/dev/null 2>/dev/null 
 apt-get install squid -y 1>/dev/null 2>/dev/null 
 apt-get remove apache2 -y 1>/dev/null 2>/dev/null 
@@ -200,7 +200,7 @@ case $opcional in
 
 1)
 clear
-echo "$(tput bold) INSTALANDO E ATUALIZANDO PACOTES $(tput sgr0)" 
+echo "$(tput bold) INSTALANDO E ACTUALIZANDO PACOTES $(tput sgr0)" 
 yum update -y 1>/dev/null 2>/dev/null 
 yum install squid -y 1>/dev/null 2>/dev/null 
 yum remove httpd -y 1>/dev/null 2>/dev/null 
@@ -262,7 +262,7 @@ main
 
 2)
 clear
-echo "$(tput bold) INSTALANDO Y ATUALIZANDO PAQUETES $(tput sgr0)" 
+echo "$(tput bold) INSTALANDO Y ACTUALIZANDO PAQUETES $(tput sgr0)" 
 yum update -y 1>/dev/null 2>/dev/null 
 yum install squid -y 1>/dev/null 2>/dev/null 
 yum remove httpd -y 1>/dev/null 2>/dev/null 
@@ -323,7 +323,7 @@ main
 
 3)
 clear
-echo "$(tput bold) INSTALANDO E ATUALIZANDO PACOTES $(tput sgr0)" 
+echo "$(tput bold) INSTALANDO E ACTUALIZANDO PACOTES $(tput sgr0)" 
 yum update -y 1>/dev/null 2>/dev/null 
 yum install squid -y 1>/dev/null 2>/dev/null 
 yum remove httpd -y 1>/dev/null 2>/dev/null 

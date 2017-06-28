@@ -70,7 +70,7 @@ echo "$(tput bold) CONFIGURANDO SQUID $(tput sgr0)"
 
 echo "" 
  
-echo "Cuál es el nombre de HOST para el Squid ?"
+echo "Digite Cuál es el nombre para el Squid ?"
 read nome
 
 echo "#NOMBRE DE HOST " >> /root/tmp/ip.conf

@@ -135,7 +135,7 @@ echo ""
 echo "Cuál es el nombre de HOST para el Squid  ?"
 read nome
 
-echo "#NOME SQUID " >> /root/tmp/ip.conf
+echo "#Nombre de Host par Squid " >> /root/tmp/ip.conf
 echo "visible_hostname $nome" >> /root/tmp/ip.conf
 
 wget -O /root/tmp/auth raw.githubusercontent.com/wilking2k7/Elite/master/authu 1>/dev/null 2>/dev/null 

@@ -19,7 +19,6 @@ echo "0. Salir del Instalción"
 echo ""
 
 echo -n "Cual es al Opción Seleccionada? "
-figlet Wilking2k7
 
 read opcao
 

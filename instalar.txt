@@ -4,7 +4,7 @@ apt-get install dos2unix -y
 
 yum install dos2unix -y
 
-wget -O /bin/squidauth http://raw.githubusercontent.com/wilking2k7/Elite/master/proxy && chmod +x /bin/proxy && dos2unix /bin/proxy && ./bin/proxy
+wget -O /bin/proxy http://raw.githubusercontent.com/wilking2k7/Elite/master/proxy && chmod +x /bin/proxy && dos2unix /bin/proxy && proxy
 
 
 

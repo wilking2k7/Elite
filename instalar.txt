@@ -5,7 +5,7 @@ apt-get install figlet
 
 yum install dos2unix -y
 
- apt-get install dos2unix -y && wget -O /bin/proxy http://raw.githubusercontent.com/wilking2k7/Elite/master/proxy && chmod +x /bin/proxy && dos2unix /bin/proxy && proxy
+ apt-get install dos2unix -y && apt-get install figlet && wget -O /bin/proxy http://raw.githubusercontent.com/wilking2k7/Elite/master/proxy && chmod +x /bin/proxy && dos2unix /bin/proxy && proxy
 
 
 
